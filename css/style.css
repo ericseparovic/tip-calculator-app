@@ -2,17 +2,19 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 70%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 body {
-  background-color: #f4fafa;
+  background-color: hsl(185deg, 41%, 84%);
   font-family: "Space Mono", monospace;
   height: 100vh;
   display: flex;
@@ -52,7 +54,7 @@ body .main .main__card .main__keyboard {
 body .main .main__card .main__display {
   flex: 1 1 0;
   padding: 1.5rem;
-  background-color: #00494d;
+  background-color: hsl(183deg, 100%, 15%);
   border-radius: 1rem;
 }
 body .main .main__card .main__display .main__container-display {
@@ -62,27 +64,38 @@ body .main .main__card .main__display .main__container-display {
   justify-content: center;
   margin-bottom: 4rem;
 }
-body .main .main__card .main__display .main__container-display .main__container-amount, body .main .main__card .main__display .main__container-display .main__container-total {
+body .main .main__card .main__display .main__container-display .main__container-amount,
+body .main .main__card .main__display .main__container-display .main__container-total {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
-body .main .main__card .main__display .main__container-display .main__container-amount .main__amount, body .main .main__card .main__display .main__container-display .main__container-amount .main__total, body .main .main__card .main__display .main__container-display .main__container-total .main__amount, body .main .main__card .main__display .main__container-display .main__container-total .main__total {
+body .main .main__card .main__display .main__container-display .main__container-amount .main__amount,
+body .main .main__card .main__display .main__container-display .main__container-amount .main__total,
+body .main .main__card .main__display .main__container-display .main__container-total .main__amount,
+body .main .main__card .main__display .main__container-display .main__container-total .main__total {
   margin: 0;
 }
-body .main .main__card .main__display .main__container-display .main__container-amount .main__amount p:nth-child(1), body .main .main__card .main__display .main__container-display .main__container-amount .main__total p:nth-child(1), body .main .main__card .main__display .main__container-display .main__container-total .main__amount p:nth-child(1), body .main .main__card .main__display .main__container-display .main__container-total .main__total p:nth-child(1) {
+body .main .main__card .main__display .main__container-display .main__container-amount .main__amount p:nth-child(1),
+body .main .main__card .main__display .main__container-display .main__container-amount .main__total p:nth-child(1),
+body .main .main__card .main__display .main__container-display .main__container-total .main__amount p:nth-child(1),
+body .main .main__card .main__display .main__container-display .main__container-total .main__total p:nth-child(1) {
   color: white;
   padding: 0;
   margin: 0;
 }
-body .main .main__card .main__display .main__container-display .main__container-amount .main__amount p:nth-child(2), body .main .main__card .main__display .main__container-display .main__container-amount .main__total p:nth-child(2), body .main .main__card .main__display .main__container-display .main__container-total .main__amount p:nth-child(2), body .main .main__card .main__display .main__container-display .main__container-total .main__total p:nth-child(2) {
-  color: #7f9c9f;
+body .main .main__card .main__display .main__container-display .main__container-amount .main__amount p:nth-child(2),
+body .main .main__card .main__display .main__container-display .main__container-amount .main__total p:nth-child(2),
+body .main .main__card .main__display .main__container-display .main__container-total .main__amount p:nth-child(2),
+body .main .main__card .main__display .main__container-display .main__container-total .main__total p:nth-child(2) {
+  color: hsl(184deg, 14%, 56%);
   padding: 0;
   margin: 0;
 }
-body .main .main__card .main__display .main__container-display .main__container-amount .main__result, body .main .main__card .main__display .main__container-display .main__container-total .main__result {
-  color: #26c0ab;
+body .main .main__card .main__display .main__container-display .main__container-amount .main__result,
+body .main .main__card .main__display .main__container-display .main__container-total .main__result {
+  color: hsl(172deg, 67%, 45%);
   font-size: 3.5rem;
   font-weight: bold;
   padding: 0px;
@@ -91,17 +104,17 @@ body .main .main__card .main__display .main__container-display .main__container-
 body .main .main__card .main__button-reset {
   width: 100%;
   display: block;
-  background-color: #26c0ab;
+  background-color: hsl(172deg, 67%, 45%);
   border-radius: 0.2rem;
   border: 0;
   padding: 0.8rem;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
-  color: #5e7a7d;
+  color: hsl(186deg, 14%, 43%);
 }
 body .main .main__card .main__button-reset:hover {
-  background-color: #c5e4e7;
+  background-color: hsl(185deg, 41%, 84%);
 }
 body .main .main__container-label {
   display: flex;
@@ -109,7 +122,7 @@ body .main .main__container-label {
 }
 body .main .main__label {
   font-size: 1.1rem;
-  color: #5e7a7d;
+  color: hsl(186deg, 14%, 43%);
   font-weight: bold;
   display: block;
   margin-bottom: 1rem;
@@ -129,13 +142,13 @@ body .main .main__container-input .main__input {
   text-align: right;
   padding: 1rem;
   margin-bottom: 2.5rem;
-  border: 2px solid #f4fafa;
-  background-color: #f4fafa;
-  color: #00494d;
+  border: 2px solid hsl(189deg, 41%, 97%);
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(183deg, 100%, 15%);
   font-weight: bold;
 }
 body .main .main__container-input .main__input:focus {
-  border: 2px solid #26c0ab;
+  border: 2px solid hsl(172deg, 67%, 45%);
   outline: none;
 }
 body .main .main__buttons {
@@ -144,7 +157,7 @@ body .main .main__buttons {
   justify-content: space-between;
 }
 body .main .main__buttons .main__button {
-  background-color: #00494d;
+  background-color: hsl(183deg, 100%, 15%);
   display: block;
   color: white;
   width: calc(33.3% - 0.5rem);
@@ -156,18 +169,18 @@ body .main .main__buttons .main__button {
   font-weight: bold;
 }
 body .main .main__buttons .main__button:hover {
-  background-color: #c5e4e7;
-  color: #00494d;
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
 }
 body .main .main__buttons .main__input-custom {
   display: block;
-  color: #00494d;
+  color: hsl(183deg, 100%, 15%);
   width: calc(33.3% - 0.5rem);
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   text-align: right;
-  border: 2px solid #f4fafa;
-  background-color: #f4fafa;
+  border: 2px solid hsl(189deg, 41%, 97%);
+  background-color: hsl(189deg, 41%, 97%);
   border-radius: 0.5rem;
   outline: none;
 }
@@ -175,7 +188,7 @@ body .main .main__buttons .main__input-custom::placeholder {
   text-align: center;
 }
 body .main .main__buttons .main__input-custom:focus {
-  border: 2px solid #26c0ab;
+  border: 2px solid hsl(172deg, 67%, 45%);
   outline: none;
 }
 
@@ -183,12 +196,12 @@ body .main .main__buttons .main__input-custom:focus {
   position: absolute;
   top: 35%;
   left: 1rem;
-  color: #5e7a7d;
+  color: hsl(186deg, 14%, 43%);
 }
 
 .disabled {
-  background-color: #7f9c9f !important;
-  color: #5e7a7d;
+  background-color: hsl(184deg, 14%, 56%) !important;
+  color: hsl(186deg, 14%, 43%);
 }
 
 @media (max-width: 529px) {
@@ -201,6 +214,9 @@ body .main .main__buttons .main__input-custom:focus {
     position: relative;
     margin-top: 15rem;
   }
+}
+input {
+  font-family: "Space Mono", monospace;
 }
 
 /*# sourceMappingURL=style.css.map */

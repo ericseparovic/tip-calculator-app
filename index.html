@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
+
 <body>
 
   <from class="main">
@@ -19,7 +21,7 @@
     <div class="main__card">
       <section class="main__keyboard">
         <label class="main__label">Bill</label>
-  
+
         <div class="main__container-input">
           <i class="fas fa-dollar-sign"></i>
           <input id="bill" class="main__input" placeholder="0" type="number" value="0">
@@ -32,10 +34,10 @@
             <button id="3" class="main__button" value="15">15%</button>
             <button id="4" class="main__button" value="25">25%</button>
             <button id="5" class="main__button" value="50">50%</button>
-            <input  id="6" class="main__input-custom porcent" type="number" placeholder="Custom" value="0">
+            <input id="6" class="main__input-custom porcent" type="number" placeholder="Custom" value="0">
           </div>
         </div>
-        <div >
+        <div>
           <div class="main__container-label">
             <label class="main__label">Number of People</label>
             <label class="main__label main__label--red">Can't be zero</label>
@@ -43,7 +45,7 @@
 
           <div class="main__container-input">
             <i class="fas fa-user"></i>
-            <input id="cantPeople" value="1" class="main__input"  placeholder="1" type="number" >
+            <input id="cantPeople" value="0" class="main__input" placeholder="1" type="number">
           </div>
         </div>
       </section>
@@ -65,7 +67,7 @@
             <p id="result_total" class="main__result">$0.00</p>
           </div>
         </div>
-          
+
         <button class="main__button-reset">Reset</button>
       </section>
     </div>
@@ -73,4 +75,5 @@
 </body>
 <script src="https://kit.fontawesome.com/b1544ce63a.js" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
+
 </html>
