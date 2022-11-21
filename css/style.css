@@ -167,6 +167,7 @@ body .main .main__buttons .main__button {
   outline: none;
   border: none;
   font-weight: bold;
+  height: 3.5rem;
 }
 body .main .main__buttons .main__button:hover {
   background-color: hsl(185deg, 41%, 84%);
