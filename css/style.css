@@ -31,7 +31,6 @@ body .main .main__image {
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: red;
 }
 body .main .main__card {
   background-color: white;
